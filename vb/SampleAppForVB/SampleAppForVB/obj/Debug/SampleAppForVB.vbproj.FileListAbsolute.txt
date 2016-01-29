@@ -1,0 +1,10 @@
+C:\projects\910.sample\vb\SampleAppForVB\SampleAppForVB\bin\Debug\SampleAppForVB.exe.config
+C:\projects\910.sample\vb\SampleAppForVB\SampleAppForVB\bin\Debug\SampleAppForVB.exe
+C:\projects\910.sample\vb\SampleAppForVB\SampleAppForVB\bin\Debug\SampleAppForVB.pdb
+C:\projects\910.sample\vb\SampleAppForVB\SampleAppForVB\bin\Debug\SampleAppForVB.xml
+C:\projects\910.sample\vb\SampleAppForVB\SampleAppForVB\obj\Debug\SampleAppForVB.Form1.resources
+C:\projects\910.sample\vb\SampleAppForVB\SampleAppForVB\obj\Debug\SampleAppForVB.Resources.resources
+C:\projects\910.sample\vb\SampleAppForVB\SampleAppForVB\obj\Debug\SampleAppForVB.vbproj.GenerateResource.Cache
+C:\projects\910.sample\vb\SampleAppForVB\SampleAppForVB\obj\Debug\SampleAppForVB.exe
+C:\projects\910.sample\vb\SampleAppForVB\SampleAppForVB\obj\Debug\SampleAppForVB.xml
+C:\projects\910.sample\vb\SampleAppForVB\SampleAppForVB\obj\Debug\SampleAppForVB.pdb

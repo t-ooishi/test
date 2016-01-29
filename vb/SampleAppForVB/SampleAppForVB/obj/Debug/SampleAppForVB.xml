@@ -1,0 +1,44 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SampleAppForVB
+</name>
+</assembly>
+<members>
+<member name="M:SampleAppForVB.DefSerialPort.SendHandler">
+	<summary>
+ 送信ハンドラ
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SampleAppForVB.DefSerialPort.ReceiveHandler">
+	<summary>
+ 受信ハンドラ
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SampleAppForVB.DefSerialPort.Initialize">
+	<summary>
+ 初期化
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SampleAppForVB.DefSerialPort.Terminate">
+	<summary>
+ 終了処理
+ </summary>
+	<remarks></remarks>
+</member><member name="P:SampleAppForVB.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:SampleAppForVB.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:SampleAppForVB.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+</members>
+</doc>
