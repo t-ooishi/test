@@ -21,7 +21,7 @@
         _port2.PortName = "COM5"
         '_port2.Initialize()
 
-        _observer = New DefObserver(Me)
+        '_observer = New DefObserver(Me)
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -33,13 +33,20 @@
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Invoke(Sub()
                    '                   TextBox2.Text = _port1.Receive(_observer)
-                   TextBox2.Text = _port1.Receive()
+                   'TextBox2.Text = _port1.Receive()
+                   Dim observer As DefObserver = New DefObserver(Me, 2)
+                   _port1.Receive(observer)
                End Sub)
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Invoke(Sub()
-                   _port2.Send(TextBox3.Text)
+                   Dim s As String = String.Format("a{0}b{1}c{2}", Chr(3), Chr(5), Chr(13))
+
+                   '                   _port2.Send(TextBox3.Text)
+                   '  Chr(
+                   Dim d As Byte() = System.Text.Encoding.ASCII.GetBytes(s)
+                   _port2.Send(s)
                End Sub)
     End Sub
 
@@ -47,6 +54,8 @@
         Invoke(Sub()
                    '                   TextBox4.Text = _port2.Receive(_observer)
                    TextBox4.Text = _port2.Receive()
+                   'Dim observer As DefObserver = New DefObserver(Me, 4)
+                   '_port2.Receive(observer)
                End Sub)
     End Sub
 
@@ -54,6 +63,7 @@
         Select Case no
             Case 2
                 Invoke(Sub()
+                           Dim d As Byte() = System.Text.Encoding.ASCII.GetBytes(str)
                            TextBox2.Text = str
                        End Sub)
             Case 4

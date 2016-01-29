@@ -6,27 +6,7 @@ SampleAppForVB
 </name>
 </assembly>
 <members>
-<member name="M:SampleAppForVB.DefSerialPort.SendHandler">
-	<summary>
- 送信ハンドラ
- </summary>
-	<remarks></remarks>
-</member><member name="M:SampleAppForVB.DefSerialPort.ReceiveHandler">
-	<summary>
- 受信ハンドラ
- </summary>
-	<remarks></remarks>
-</member><member name="M:SampleAppForVB.DefSerialPort.Initialize">
-	<summary>
- 初期化
- </summary>
-	<remarks></remarks>
-</member><member name="M:SampleAppForVB.DefSerialPort.Terminate">
-	<summary>
- 終了処理
- </summary>
-	<remarks></remarks>
-</member><member name="P:SampleAppForVB.My.Resources.Resources.ResourceManager">
+<member name="P:SampleAppForVB.My.Resources.Resources.ResourceManager">
 	<summary>
   このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
 </summary>
@@ -39,6 +19,93 @@ SampleAppForVB
 	<summary>
   ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
 </summary>
+</member><member name="M:SampleAppForVB.DefSerialPort.#ctor">
+	<summary>
+ インスタンス生成
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SampleAppForVB.DefSerialPort.#ctor(System.String,System.Int32,System.IO.Ports.Parity,System.Int32,System.IO.Ports.StopBits,System.IO.Ports.Handshake)">
+	<summary>
+ インスタンス生成
+ </summary>
+	<param name="portName"></param>
+	<param name="baudRate"></param>
+	<param name="parity"></param>
+	<param name="dataBits"></param>
+	<param name="stopBits"></param>
+	<param name="handshake"></param>
+	<remarks></remarks>
+</member><member name="M:SampleAppForVB.DefSerialPort.CreateObject">
+	<summary>
+ 各種オブジェクト生成
+ </summary>
+	<remarks>
+ セマフォ生成とシリアル受信ハンドラ登録を行う
+ </remarks>
+</member><member name="M:SampleAppForVB.DefSerialPort.Initialize">
+	<summary>
+ 初期化
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SampleAppForVB.DefSerialPort.Terminate">
+	<summary>
+ 終了処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SampleAppForVB.DefSerialPort.DummyWrite(System.String)">
+	<summary>
+ 書込み処理(Wrapper)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SampleAppForVB.DefSerialPort.DummyRead">
+	<summary>
+ 読み出し処理(Wrapper)
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:SampleAppForVB.DefSerialPort.Send(System.String)">
+	<summary>
+ シリアル送信
+ </summary>
+	<param name="data"></param>
+	<remarks></remarks>
+</member><member name="M:SampleAppForVB.DefSerialPort.Receive">
+	<summary>
+ シリアル受信(同期)
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:SampleAppForVB.DefSerialPort.Receive(SampleAppForVB.IDefObserver)">
+	<summary>
+ シリアル受信(非同期)
+ </summary>
+	<param name="observer"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:SampleAppForVB.DefSerialPort.Abort">
+	<summary>
+ シリアル受信(非同期)の中断
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SampleAppForVB.DefSerialPort.DataReceivedHandler(System.Object,System.IO.Ports.SerialDataReceivedEventArgs)">
+	<summary>
+ シリアル受信ハンドラ
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:SampleAppForVB.DefSerialPort.Notice">
+	<summary>
+ シリアル受信のイベント通知
+ </summary>
+	<remarks></remarks>
+</member><member name="T:SampleAppForVB.DefSerialPort">
+	<summary>
+ シリアル通信
+ </summary>
+	<remarks>
+ シリアル通信の接続,切断と送受信を行う
+ </remarks>
 </member>
 </members>
 </doc>
