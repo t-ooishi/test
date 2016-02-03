@@ -70,6 +70,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DefCommand.vb" />
     <Compile Include="DefObserver.vb" />
     <Compile Include="DefSerialPort.vb">
       <SubType>Component</SubType>
@@ -98,6 +99,9 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="DefSerialComm.vb" />
+    <Compile Include="DefWriteCommand.vb" />
+    <Compile Include="DefReadCommand.vb" />
+    <Compile Include="UserCommand.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">

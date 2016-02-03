@@ -1,12 +1,6 @@
 ﻿Public Class DefSerialComm
     Private _port As DefSerialPort
 
-    Const _header As String = "@"
-    Const _id As String = "00"
-    Const _writeFrameFlg As String = "#"
-    Const _readFrameFlg As String = "$"
-    Const _terminator As String = ("*" + Chr(13))
-
     ''' <summary>
     ''' インスタンス生成
     ''' </summary>
@@ -32,35 +26,32 @@
         _port = Nothing
     End Sub
 
-    Public Sub WriteCommand(
-                           code As String,
-                           value As Integer
-                           )
-        Dim sendData As String = CreateCommandData(code, value)
-
-
-    End Sub
-
     ''' <summary>
-    ''' 送信電文を生成する
+    ''' 書込みコマンド
     ''' </summary>
-    ''' <param name="code"></param>
-    ''' <param name="value"></param>
-    ''' <returns></returns>
+    ''' <param name="command"></param>
     ''' <remarks></remarks>
-    Private Function CreateCommandData(
-                                      code As String,
-                                      value As String
-                                      ) As String
-        Return String.Format("{0}{1}{2}{3}{4}{5:000000000}{6}",
-                                           _header,
-                                           _id,
-                                           _writeFrameFlg,
-                                           code,
-                                           value,
-                                           _terminator)
-
-        Return Nothing
+    Public Function WriteCommand(command As DefCommand) As Boolean
+        _port.Send(command.ToString)
+        Return True
     End Function
+
+    Public Function ReadCommand(command As DefCommand, ByRef value As Integer) As Boolean
+        _port.Send(command.ToString)
+        Received()
+        Return True
+    End Function
+
+    Private Function Received() As String
+        Dim result As String
+        Dim work As String
+
+        work = _port.Receive()
+
+
+
+        Return result
+    End Function
+
 
 End Class
