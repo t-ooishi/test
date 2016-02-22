@@ -42,7 +42,7 @@
         Return True
     End Function
 
-    Private Function Received() As String
+    Protected Function Received() As String
         Dim result As String
         Dim work As String
 
