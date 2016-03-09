@@ -9,15 +9,15 @@ namespace SampleAppForKurabo
 {
     class DefLabel : Label
     {
-        ushort _id;
+        ComponentId _id;
 
-        public ushort Id
+        public ComponentId Id
         {
             get { return _id; }
             set { _id = value; }
         }
 
-        public void SetEventHandler(ushort id, IMainTopController controller)
+        public void SetEventHandler(ComponentId id, IMainTopController controller)
         {
             _id = id;
         }
